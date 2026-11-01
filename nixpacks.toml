@@ -1,0 +1,8 @@
+[phases.install]
+cmds = ["pnpm install --no-frozen-lockfile --filter @workspace/discord-bot --filter @workspace/discord-bot^..."]
+
+[phases.build]
+cmds = []
+
+[start]
+cmd = "pnpm --filter @workspace/discord-bot run dev"
